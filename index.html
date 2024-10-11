@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>proejeto cep</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/placeholder.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="forma">
+           <img
+                    src="img/9116302-cep-logo-cep-letra-cep-letra-logo-design-iniciais-cep-logo-ligado-com-circulo-e-maiusculas-monograma-logo-cep-tipografia-para-tecnologia-negocios-e-real-marca-imobiliaria-vetor-removebg.png"
+                    alt="CEP" width="200" height="200"><!-- "CEP" que aparece no topo da caixa-->
+
+            <form method="get" action="." id="central">
+                
+              
+
+                <div class="cepbox"> <!--caixa de input e botão de enviar-->
+
+                    <label>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" placeholder="00000-000"
+                            oninput="formatacaoCEP(this)"></label><br /><!--escrita que aparece dentro do input-->
+                            <a href="nao_o_CEP.html">Não sei o CEP</a>
+                    <button onclick="pegacep(event)">Enviar</button> 
+                </div>
+
+            </form>
+            <div class="tabela"><!--tabela que aparece depois de colocar um cep-->
+                <table border="1" style="display: none; " id="tabelaCep">
+                    
+                    <thead>
+                        <tr id="caixinha">
+                            <td colspan="2"  ></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Logradouro</th>
+                            <td id="rua"></td>
+                        </tr>
+                        <tr>
+                            <th>Bairro</th>
+                            <td id="bairro"></td>
+                        </tr>
+                        <tr>
+                            <th>Cidade</th>
+                            <td id="cidade"></td>
+                        </tr>
+                        <tr>
+                            <th>Estado</th>
+                            <td id="uf"></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr id="caixinha">
+                            <td colspan="2"></td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

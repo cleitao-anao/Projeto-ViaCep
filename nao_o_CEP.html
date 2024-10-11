@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP por Endereço</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/gps.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/placeholder.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="forma">
+            <div class="titulo">
+                <h1>Buscar o Cep Express</h1>
+                <form id="addressForm">
+                    <div class="cepbox">
+
+                        <label for="uf">Estado (UF):</label>
+                        <input type="text" id="uf" name="uf" placeholder="Ex: SP" maxlength="2" required>
+
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo" required>
+
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="Ex: Av. Paulista" required>
+
+                        <button type="submit" onclick="naoSeiOCep()">Procurar CEP</button>
+
+                        <p id="loading" style="display:none;">Carregando...</p>
+                        <div class="resultado">
+                </form>
+                <div id="result" class="card" style="display: none;">
+                    <h2>Resultado da busca</h2>
+                    <p><strong>CEP(s) encontrado(s):</strong></p>
+                    <ul id="cepsList" style="background-color: white; color: black; border-radius: 5px;"></ul>
+
+                </div>
+                <a href="index.html">Voltar</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

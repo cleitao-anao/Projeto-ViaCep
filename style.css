@@ -1,0 +1,126 @@
+body {
+    background-image: url("img/png-transparent-globe-world-world-map-flat-design-black-and-white-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    
+}/*fundo de tudo*/
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}/*posicão da caixa*/
+
+.forma {
+    flex-direction: column;
+    position: absolute;
+    gap: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.3em;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+    border: 1pt solid #ffff;
+    
+
+}/*caixa*/
+
+.forma:hover{ 
+    box-shadow:  0px 0px 20px 1px #ffff; 
+ } /*hover, faz aparecer a sombra branca que esta conctado na forma que é a caixa */
+
+.tabela {
+    position: relative;
+    z-index: 2; 
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #000000;
+    transition: 0.5s ease ;  
+}/*posicão da tabela*/
+
+#caixinha {
+    background-color: rgb(255, 255, 255);
+}/*style da caixinha encima da tabela*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;  
+    border-bottom: 1px solid #000000;
+    background-color: #ffffff;   
+}
+
+
+.cepbox {
+    text-align: center;
+}/*alinhamento do inpunt com botão de enviar*/
+
+.titulo {
+    text-align: center;
+    color: white; 
+
+}/*"CEP"*/
+
+
+  
+.forma label {
+    display: block;
+    margin-bottom: 2px;
+}/*distancia do input com enviar*/
+
+.forma input{ 
+    width: 60%;
+    border-radius: 4px;
+    height: 18px;
+    font-size: 0.9rem;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 0.8rem;
+    outline: none;
+    transition: 0.5s ease;
+}/*caixa de input (posicão e style)*/
+
+.cepbox:focus {
+    border: 2px solid rgb(57, 120, 255);
+    box-shadow: rgba(133, 130, 130, 0.1) 0px 4px 12px;
+    transform: scale(0.99);
+}/*bglh da internet q o jão pegou pra deixar o "enviar" bonitinho*/
+
+.cepbox::placeholder {
+    font-size: 13px;
+    font-weight: 600;
+} /*fonte do input do cep*/
+
+.cepbox button {
+    padding: 5px 3%;
+    text-align: center;
+    color: rgb(95, 87, 87);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    transition: 0.5s;
+    width: 70%;
+    margin-top: 10px;
+    font-size: 13px;
+    box-shadow: rgba(104, 100, 100, 0.1) 0px 4px 6px -1px, rgba(49, 42, 42, 0.06) 0px 2px 4px -1px;
+}/*botão de enviar (posicão e style)*/
+  
+  .cepbox button:hover {
+    border-radius: 70px;
+    background-color: rgb(243, 242, 242);
+    border-color: rgb(236, 232, 232);
+}/*animacão e cor do botão de enviar*/
+
+.cepbox a{
+    color:rgba(240, 248, 255, 0.644);
+    font-size: small;
+    
+    height: 100px;
+}
+
+
+
+
